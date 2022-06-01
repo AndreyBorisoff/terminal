@@ -1,0 +1,309 @@
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+	Репозиторий создан через Web-интерфейс: https://github.com/AndreyBorisoff/JSON
+	
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+	git clone git@github.com:AndreyBorisoff/JSON.git
+	
+ 6. Внутри локального JSON создать файл “new.json”.
+	cd JSON
+	touch new.json
+	
+ 7. Добавить файл под гит.
+	git add new.json
+	
+ 8. Закоммитить файл.
+	git commit -m "add json file"
+	
+ 9. Отправить файл на внешний GitHub репозиторий.
+	git push
+	
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+	vim new.json
+	<i> - режим редактирования
+	ввести информацию:
+		{
+		  "person": [
+			"Borisov",
+			"Andrei",
+			"Alexandrovich"
+		  ],
+		  "age": 42,
+		  "number of pets": 0,
+		  "expected salary": 50000
+		}
+	<Esc>
+	:wq
+ 
+ 11. Отправить изменения на внешний репозиторий.
+	git add new.json
+	git commit -m "add information to JSON file"
+	git push
+	
+ 12. Создать файл preferences.json
+	touch preferences.json
+	
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+	vim preferences.json
+	<i> - режим редактирования
+	ввести информацию:
+		{
+		  "favourite movie": "The Hateful Eight",
+		  "favourite TV show": "Sherlock",
+		  "favorite food": "okroshka",
+		  "favorite season": "autumn",
+		  "side would like to visit": "dark side of the Force"
+		}
+	<Esc>
+	:wq
+	
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+	vim sklls.json
+	<i> - режим редактирования
+	ввести информацию:
+		{
+		  "hard skills": [
+			"Linux terminal (Bash)",
+			"GitHub",
+			"JavaScript",
+			"Postman",
+			"SQL"
+		  ],
+		  "soft skills": [
+			"communication",
+			"prioritization",
+			"attention to detail",
+			"organized",
+			"ability to learn quickly",
+			"perseverance"
+		  ]
+		}
+	<Esc>
+	:wq
+	
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+	git add .
+	git commit . -m "adding information about preferences and skills"
+	git push
+	
+ 16. На веб интерфейсе создать файл bug_report.json.
+	https://github.com/AndreyBorisoff/JSON/tree/main
+	<Add file>
+	<Create new file>
+	<Name your file...> = bug_report.json
+	
+	
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	<нажать "Commit new file"> 
+	
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+	<Открыть файл bug_report.json щелкнув не него>
+	<Нажать "Edit this file">
+	<Вести данные>
+	
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	<Нажать "Commit changes">
+	
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+	git pull
+
+XML
+
+ 21. Создать внешний репозиторий c названием XML.
+	Репозиторий создан через Web-интерфейс: https://github.com/AndreyBorisoff/XML
+	
+ 22. Клонировать репозиторий XML на локальный компьютер.
+	cd ..
+	git clone git@github.com:AndreyBorisoff/XML.git
+	
+ 23. Внутри локального XML создать файл “new.xml”.
+	cd XML
+	touch new.xml
+	
+ 24. Добавить файл под гит.
+	git add .
+	
+ 25. Закоммитить файл.
+	git commit -m "add the XML file"
+ 
+ 26. Отправить файл на внешний GitHub репозиторий.
+	git push
+ 
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+	vim new.xml
+	<i> - режим редактирования
+	ввести информацию:
+		<?xml version="1.0" encoding="UTF-8" ?>
+		<root>
+		<person>
+        <LastName value="Borisov"/>
+    	<FirstName value="Andrei"/>
+    	<Patronym value="Alexandrovich"/>
+    	<Age value="42"/>
+    	<Number_of_pets value="0"/>
+    	<Expected_salary value="50000"/>
+		</person>
+		</root>
+	Esc - выход из режима редактирования
+	:wq
+	
+ 28. Отправить изменения на внешний репозиторий.
+	git commit -am "update XML file"
+	git push
+ 
+ 29. Создать файл preferences.xml
+	touch preferences.xml
+	
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+	vim preferences.xml
+	<i> - режим редактирования
+	ввести информацию:
+	<?xml version="1.0" encoding="UTF-8" ?>
+	<root>
+		<favourite_movie>The Hateful Eight</favourite_movie>
+		<favourite_TV_show>Sherlock</favourite_TV_show>
+		<favorite_food>okroshka</favorite_food>
+		<favorite_season>autumn</favorite_season>
+		<country_would_like_to_visit>Japan</country_would_like_to_visit>
+	</root>
+	Esc - выход из режима редактирования
+	:wq
+ 
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+	cat > skills.xml
+	ввести последовательно строки:
+		<?xml version="1.0" encoding="UTF-8"?>
+		<root>
+			<skill type="hard">Linux terminal (Bash)</skill>
+			<skill type="hard">GitHub</skill>
+			<skill type="hard">JavaScript</skill>
+			<skill type="hard">Postman</skill>
+			<skill type="hard">SQL</skill>
+			<skill type="soft">communication</skill>
+			<skill type="soft">prioritization</skill>
+			<skill type="soft">attention to detail</skill>
+			<skill type="soft">organized</skill>
+			<skill type="soft">ability to learn quickly</skill>
+			<skill type="soft">perseverance</skill>
+		</root>
+	Ctrl + C - выход из режима редактирования
+	
+ 32. Сделать коммит в одну строку.
+	git add -A && git commit -m "add 2 files"
+ 
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+	
+ 34. На веб интерфейсе создать файл bug_report.xml.
+	https://github.com/AndreyBorisoff/XML/tree/main
+	<Add file>
+	<Create new file>
+	<Name your file...> = bug_report.json
+ 
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	<нажать "Commit new file"> 
+ 
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+	<Открыть файл bug_report.xml щелкнув не него>
+	<Нажать "Edit this file">
+	<Вести данные>
+	
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	<Нажать "Commit changes">
+ 
+ 38. Синхронизировать внешний и локальный репозиторий XML
+	git pull
+	
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+	Репозиторий создан через Web-интерфейс: https://github.com/AndreyBorisoff/TXT
+	
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+	git clone git@github.com:AndreyBorisoff/TXT.git
+ 
+ 3. Внутри локального TXT создать файл “new.txt”.
+	cd TXT
+	touch new.txt
+ 
+ 4. Добавить файл под гит.
+	git add new.txt
+ 
+ 5. Закоммитить файл.
+	git commit -m "add txt file"
+	
+ 6. Отправить файл на внешний GitHub репозиторий.
+	git push
+	
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+	vim new.txt
+	<i> - режим редактирования
+	ввести информацию:
+	Full name - Borisov Andrei Alexandrovich,
+	Age - 42,
+	Number of pets - 0,
+	Expected salary - 50000.
+	<Esc>
+	:wq
+	
+ 8. Отправить изменения на внешний репозиторий.
+	git commit -am "update txt file"
+ 
+ 9. Создать файл preferences.txt
+	touch preferences.txt
+	
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+ 	vim preferences.txt
+	<i> - режим редактирования
+	ввести информацию:
+		  Favourite movie is "The Hateful Eight"
+		  Favorite series is "Sherlock"
+		  Favourite food is okroshka
+		  Favourite season is autumn
+		  The country i would like to visit is Japan
+	<Esc>
+	:wq
+	
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+	cat > skills.txt
+	ввести последовательно строки:
+			Hard skills: Linux terminal(Bash), GitHub, JavaScript, Postman, SQL
+			Soft skills: communication, prioritization, attention to detail, organized, ability to learn quickly, perseverance		
+	Ctrl + C - выход из режима редактирования
+		
+ 12. Сделать коммит в одну строку.
+	git add preferences.txt skills.txt && git commit -m "add 2 txt files"
+ 
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+ 
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 	https://github.com/AndreyBorisoff/TXT
+	<Add file>
+	<Create new file>
+	<Name your file...> = bug_report.txt
+ 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	<нажать "Commit new file"> 
+	
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+	<Открыть файл bug_report.txt щелкнув не него>
+	<Нажать "Edit this file">
+	<Вести данные>
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	<Нажать "Commit changes">
+	
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+	git pull
